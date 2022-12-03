@@ -1,0 +1,240 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ body {
+   position: relative;
+ }
+ 
+ img {
+   max-width: 100%;
+ }
+ 
+ a {
+   text-decoration: none;
+   font-family: sans-serif;
+ }
+ 
+ ul {
+   list-style-type: none;
+ }
+ 
+ .container {
+   max-width: 1240px;
+   margin: 0 auto;
+ }
+ 
+ .flex {
+   display: flex;
+   vertical-align: middle;
+ }
+
+article {
+   margin-top: 40px;
+ }
+ article section {
+   display: inline-block;
+   width: 33%;
+   margin: 15px 0;
+   padding: 0 10px;
+   position: relative;
+ }
+ article section .block {
+   box-shadow: 0 0 9px -4px #F4CA16;
+ }
+ article section .img-doc {
+   position: relative;
+ }
+ article section .img-doc:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 100%;
+   background-color: rgba(255, 255, 255, 0.57);
+   opacity: 0;
+ }
+ article section :hover::before {
+   opacity: .5;
+ }
+ article section .img-doc .get-appointment {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 16;
+   opacity: 0;
+   transition: .4s;
+ }
+ article section:hover .get-appointment  {
+   opacity: 1;
+ }
+ article section .img-doc .get-appointment > a  {
+   display: inline-block;
+   padding: 13px 25px;
+   font-size: 14px;
+   font-weight: 500;
+   color: white;
+   background: #F4CA16;
+   border-radius: 4px;
+}
+ article section .img-doc .get-appointmentDell {
+   position: absolute;
+   top: 9%;
+   left: 83%;
+   transform: translate(-50%, -50%);
+   z-index: 16;
+   opacity: 0;
+   transition: .4s;
+ }
+ article section:hover .get-appointmentDell  {
+   opacity: 1;
+ }
+ article section:hover .get-appointmentDell > p > a {
+   display: inline-block;
+   padding: 10px 20px;
+   font-size: 14px;
+   font-weight: 500;
+   color: white;
+   background: #F4CA16;
+   border-radius: 4px;
+ }
+ article section .name-info {
+   text-align: center;
+   padding: 20px 0;
+   background-color: white;
+ }
+ article section .name-info > p {
+   color: #666;
+   font-family: sans-serif;
+   font-size: 20px;
+   display: block;
+   margin-bottom: 10px;
+ }
+ article section .name-info > h2 > a {
+   color: black;
+   font-size: 22px;
+   font-weight: 400;
+   display: block;
+ }
+ article section .name-info > h2 > a:hover {
+   color: #F4CA16;
+ }
+
+ .loading{
+   margin-top: 60px;
+ }
+ .loading > h1 {
+   color: #e6c018;
+ }
+ .loading > h1 > span {
+   color: #ea1414;
+ }
+ .loading .anime{
+   margin: 10px auto;
+   border: 10px solid #f3f3f3;
+   border-radius: 50%;
+   width: 100px;
+   height: 100px;
+   animation-name: MyAnime;
+   animation: MyAnime  1.5s linear infinite;
+
+}
+
+@keyframes MyAnime {
+   0%{
+     border-bottom: 10px solid #f80808;
+     border-top: 10px solid #F4CA16;
+     animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+     transform: rotate(0deg)
+     
+   }
+   10%{
+      border-bottom: 10px solid #e6c018 ;
+      border-top: 10px solid #ea1414;
+   }
+   20% { 
+      border-bottom: 10px solid #f80808;
+      border-top: 10px solid #F4CA16;
+   }
+   30% {
+      border-bottom: 10px solid #e6c018;
+      border-top: 10px solid #ea1414;
+   }
+   40% {
+      border-bottom: 10px solid #f80808;
+      border-top: 10px solid #F4CA16;
+   }
+   50% {
+     border-bottom: 10px solid #e6c018 ;
+     border-top: 10px solid #ea1414;
+     
+   }
+   60%{
+      border-bottom: 10px solid #ea1414 ;
+      border-top: 10px solid #F4CA16;
+   }
+   70%{
+      border-bottom: 10px solid #e6c018 ;
+      border-top: 10px solid #ea1414;
+   }
+   80%{
+      border-bottom: 10px solid #ea1414 ;
+      border-top: 10px solid #F4CA16;
+   }
+   90%{
+      border-bottom: 10px solid #e6c018 ;
+      border-top: 10px solid #ea1414;
+   }
+   100%{
+      border-bottom: 10px solid #ea1414 ;
+      border-top: 10px solid #F4CA16;
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      transform: rotate(2000deg)
+      
+   }
+ }
+
+.loading .anime::after {
+   content: " ";
+   display: block;
+   border-radius: 50%;
+   width: 0;
+   height: 0;
+   margin: 8px;
+   box-sizing: border-box;
+   border: 32px solid #fff;
+   border-color: #f80808 transparent  #F4CA16  transparent;
+   animation: lds-hourglass 1.2s infinite;
+   animation-name: MyAnime;
+   animation: MyAnime1 1.5s linear infinite;
+   
+ }
+
+ @keyframes MyAnime1 {
+   0% {
+     transform: rotate(2000deg);
+     animation-timing-function: cubic-bezier(0.55, 0.055, 0.655, 0.19);
+   }
+   50% {
+     transform: rotate(1000deg);
+     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+   }
+   100% {
+     transform: rotate(0deg);
+   }
+ }
+
+
+
+
+
+
+
+
+ 
+ 

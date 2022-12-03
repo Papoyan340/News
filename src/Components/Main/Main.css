@@ -1,0 +1,111 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ body {
+   position: relative;
+ }
+ 
+ img {
+   max-width: 100%;
+ }
+ 
+ a {
+   text-decoration: none;
+   font-family: sans-serif;
+ }
+ 
+ ul {
+   list-style-type: none;
+ }
+ 
+ .container {
+   max-width: 1240px;
+   margin: 0 auto;
+ }
+ 
+ .flex {
+   display: flex;
+   vertical-align: middle;
+ }
+
+main {
+   background-image: url("./shopping\ keyboard.jpg");
+   position: relative;
+   padding: 100px 0;
+   background-position: center;
+   background-repeat: no-repeat;
+ }
+ main::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 100%;
+   background-color: #F4CA16;
+   opacity: .3;
+ 
+ }
+ main .relativ {
+   position: relative;
+   margin: 0 auto;
+   max-width: 1000px;
+   border: 1px solid ;
+ }
+ main .met-our {
+   position: relative;
+   text-align: center;
+   z-index: 10;
+ }
+ 
+ main .met-our > h1 {
+   color: #fff;
+   text-transform: capitalize;
+   font-size: 40px;
+   font-weight: 700;
+ }
+ main .met-our > ul {
+   padding-top: 20px;
+   display: flex;
+   color: white;
+   justify-content: center;
+ }
+ main .met-our > ul > li {
+   margin: 0 5px;
+   font-size: 17px;
+ }
+ main .met-our > ul > li >  i {
+   font-size: 10px;
+ }
+ main .met-our > ul > li >  a {
+   color: white;
+   font-size: 17px;
+ }
+ main .met-our > ul > li >  a:hover {
+   color: black;
+ }
+ main .met-our .navigateMain{
+   width: 100%;
+   position: absolute;
+   bottom: -80px;
+ }
+ main .met-our .navigate {
+   display: flex;
+   justify-content: space-around;
+ }
+ main .met-our .navigate .buttOn {
+    background-color: #F4CA16;
+    padding: 5px 13px;
+    border-radius: 30px;
+    color: aliceblue;
+    font-size: 21px;
+    
+ }
+ main .met-our .navigate .buttOn:hover {
+   box-shadow: -3px 3px 14px 3px #f4ca16;
+    opacity: 0.9;
+ }

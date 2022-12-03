@@ -1,0 +1,255 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ body {
+   position: relative;
+ }
+ 
+ img {
+   max-width: 100%;
+ }
+ 
+ a {
+   text-decoration: none;
+   font-family: sans-serif;
+ }
+ 
+ ul {
+   list-style-type: none;
+ }
+ 
+ .container {
+   max-width: 1240px;
+   margin: 0 auto;
+ }
+ 
+ .flex {
+   display: flex;
+   vertical-align: middle;
+ }
+
+footer {
+   background-color: #F4CA16;
+   padding: 100px 0;
+ }
+ footer .list {
+   justify-content: space-between;
+   align-items: flex-start;
+ }
+ .max-with25 {
+   max-width: 25%;
+ }
+ footer .list .about {
+   padding: 0 10px;
+ }
+ footer .list h2 {
+   color: #fff;
+   font-family: sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   margin-bottom: 40px;
+   padding-bottom: 20px;
+   text-transform: capitalize;
+   position: relative;
+ }
+ footer .list h2:before {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   height: 3px;
+   width: 50px;
+   opacity: 1;
+   background-color: white;
+ 
+   transition: all .3s;
+ }
+ footer .list p {
+   font-family: sans-serif;
+   font-weight: 400;
+   color: white;
+   line-height: 25px;
+   margin-bottom: 20px;
+ }
+ footer .list .about > ul {
+   margin-top: 20px;
+ }
+ footer .list .about > ul > li > a {
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   border: 1px solid white;
+   border-radius: 50%;
+   text-align: center;
+   color: white;
+   padding: 5px 8px;
+   margin-right: 10px;
+ }
+ footer .list .about > ul > li > a > i {
+   font-size: 15px;
+ }
+ footer .list .about > ul > li > a:hover{
+   background-color: white;
+   color: #F4CA16;
+ }
+ footer .list ul li a i {
+   font-size: 10px;
+   margin-right: 5px;
+ }
+ footer .list ul li a {
+   display: inline-block;
+   justify-items: center;
+   color: white;
+   font-family: sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   padding-bottom: 20px;
+   transition: all .4s;
+ }
+ footer .list .links  ul > li > a:hover {
+   margin-left: 5px;
+ }
+ footer .list .links .left, .right {
+   display: inline-block;
+ }
+ footer .list .links .left {
+   margin-right: 20px;
+ }
+ footer .list .open > ul > li {
+   font-family: sans-serif;
+   font-weight: 400;
+   color: white;
+   margin-bottom: 21px;
+ }
+ footer .list .open > ul > li > span {
+   display: inline-block;
+   float: right;
+ }
+ 
+ footer .list .newsletter input {
+   border: 1px solid #fff;
+   height: 50px;
+   color: #fff;
+   background-color: #F4CA16;
+   padding-left: 18px;
+   padding-right: 70px;
+   display: inline-block;
+   font-weight: 400;
+   border-radius: 5px 0 0 5px; ;
+ }
+ footer .list .newsletter button > i {
+   color: #F4CA16;
+   font-size: 20px;
+   padding: 15px;
+ }
+ footer .list .newsletter .mail-button {
+   position: relative;
+ }
+ footer .list .newsletter button {
+   position: absolute;
+   top: 0;
+   background-color: white;
+   border: none;
+   border-radius: 0 5px 5px 0;
+ }
+ 
+ body .bootm {
+   background-color: #F4CA16;
+   text-align: center;
+   padding: 40px;
+ }
+ body .bootm > p > a {
+   color: white;
+   text-decoration: underline;
+ }
+ body .bootm > p {
+   color: white;
+ }
+ 
+ body .fiqset {
+   padding: 6px 5px;
+   background-color: white;
+   width: 16%;
+   box-shadow: 0 0 12px -3px black;
+   position: fixed;
+   bottom: 10px;
+   left: 10px;
+ }
+ body .fiqset > a {
+   color: black;
+ 
+ }
+ body .fiqset img {
+   width: 40px;
+   display: inline-block;
+   vertical-align: middle;
+ }
+
+
+ body .sing {
+   background-color: #EDF2FF;
+   margin-top: 100px;
+ }
+ body .sing  .container.flex {
+   padding: 100px 0;
+ }
+ body .sing .text{
+   width: 50%;
+ }
+ body .sing .text > h2 {
+   font-size: 22px;
+   font-family: sans-serif;
+   margin-bottom: 10px;
+   color: #2C2D3F;
+ }
+ body .sing .text > p {
+   font-family: sans-serif;
+   color: #757575;
+   line-height: 25px;
+   font-weight: 400;
+ }
+ body .sing .emali-sub {
+   padding-top: 10px;
+ }
+ body .sing .emali-sub > form .email {
+   height: 60px;
+   width: 300px;
+   border: none;
+   color: #5b5b5b;
+   border-radius: 5px;
+   padding: 0 25px;
+   font-weight: 500;
+   font-size: 14px;
+ }
+ body .sing .emali-sub > form > button {
+   position: relative;
+   display: inline-block;
+   padding: 20px 32px;
+   border-radius: 5px;
+   margin-left: 10px;
+   font-size: 15px;
+   font-weight: 600;
+   color: white;
+   background-color: #F4CA16;
+   border: none;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.61);
+ }
+ body .sing .emali-sub > form > button::before {
+   content: "";
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: #2C2D3F;
+   transition: all .5s;
+   border-radius: 4px;
+ }
+ body .sing .emali-sub > form  > button:hover::before {
+   opacity: .5;
+ }
+ 
